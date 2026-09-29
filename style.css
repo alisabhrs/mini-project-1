@@ -1851,7 +1851,7 @@ footer {
     justify-content: space-between;
     gap: 30px;
 
-    background: var(--black);
+    background: var(--green);
     color: var(--white);
 
     font-size: 9px;
