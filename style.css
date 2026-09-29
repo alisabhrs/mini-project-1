@@ -360,6 +360,10 @@ section {
         var(--white);
 }
 
+.about .section-label {
+    margin-bottom: 50px;
+}
+
 .about-content {
     display: grid;
     grid-template-columns: 1.15fr 0.85fr;
