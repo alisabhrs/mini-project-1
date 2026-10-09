@@ -1727,6 +1727,20 @@ section {
     font-weight: normal;
 }
 
+.contact-label {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+
+    font-weight: bold;
+}
+
+.contact-icon {
+    width: 18px;
+    height: 18px;
+    flex-shrink: 0;
+}
+
 
 /* MAP GRAPHIC */
 
@@ -1740,81 +1754,14 @@ section {
     background: var(--brown);
 }
 
-.map-placeholder::before,
-.map-placeholder::after {
-    content: "";
-
+.map-embed {
     position: absolute;
+    inset: 0;
 
-    width: 800px;
-    height: 120px;
+    width: 100%;
+    height: 100%;
 
-    background:
-        rgba(255, 255, 255, 0.15);
-
-    transform: rotate(-35deg);
-}
-
-.map-placeholder::before {
-    top: 150px;
-    left: -200px;
-}
-
-.map-placeholder::after {
-    left: -100px;
-    bottom: 120px;
-
-    transform: rotate(25deg);
-}
-
-.map-line {
-    position: absolute;
-
-    background: var(--sage);
-
-    opacity: 0.6;
-}
-
-.line-one {
-    top: 45%;
-    left: -10%;
-
-    width: 120%;
-    height: 8px;
-
-    transform: rotate(12deg);
-}
-
-.line-two {
-    top: -10%;
-    left: 55%;
-
-    width: 8px;
-    height: 120%;
-
-    transform: rotate(20deg);
-}
-
-.line-three {
-    left: 5%;
-    bottom: 30%;
-
-    width: 90%;
-    height: 5px;
-
-    transform: rotate(-20deg);
-}
-
-.map-pin {
-    position: absolute;
-
-    top: 45%;
-    left: 52%;
-    z-index: 2;
-
-    color: var(--sage);
-
-    font-size: 60px;
+    border: 0;
 }
 
 .map-label {
@@ -1826,6 +1773,12 @@ section {
 
     display: flex;
     flex-direction: column;
+
+    padding: 12px 18px;
+
+    background: var(--green);
+    color: var(--white);
+    border-radius: var(--radius);
 }
 
 .map-label strong {
@@ -2048,7 +2001,6 @@ footer a {
 
     .navbar {
         padding: 18px 5%;
-
         align-items: flex-start;
     }
 
@@ -2066,11 +2018,9 @@ footer a {
 
     .navbar nav {
         max-width: 225px;
-
         display: flex;
         justify-content: flex-end;
         flex-wrap: wrap;
-
         gap: 8px 14px;
     }
 
@@ -2083,17 +2033,12 @@ footer a {
 
     .hero {
         min-height: 100svh;
-
-        padding:
-            145px 6%
-            85px;
-
+        padding: 145px 6% 85px;
         background-position: center;
     }
 
     .hero h1 {
         font-size: clamp(48px, 14vw, 70px);
-
         letter-spacing: -2px;
     }
 
@@ -2110,7 +2055,6 @@ footer a {
 
     .about h2 {
         font-size: 52px;
-
         letter-spacing: -2px;
     }
 
@@ -2124,7 +2068,6 @@ footer a {
 
     .stat-card {
         min-height: 120px;
-
         padding: 18px 15px;
     }
 
@@ -2154,7 +2097,6 @@ footer a {
 
     .folder-paper {
         min-height: 390px;
-
         padding: 32px 25px;
     }
 
@@ -2168,7 +2110,6 @@ footer a {
 
     .folder-tab {
         right: 25px;
-
         width: 145px;
         height: 60px;
     }
@@ -2186,7 +2127,6 @@ footer a {
 
     .programs-heading h2 {
         font-size: 45px;
-
         letter-spacing: -2px;
     }
 
@@ -2206,7 +2146,6 @@ footer a {
     .ucp-sheet {
         width: 100%;
         height: 390px;
-
         transform: none;
     }
 
@@ -2232,7 +2171,6 @@ footer a {
 
     .resource-text h2 {
         font-size: 62px;
-
         letter-spacing: -4px;
     }
 
@@ -2259,33 +2197,25 @@ footer a {
     }
 
     .layer-one {
-        transform:
-            translateX(10px)
-            translateY(4px);
+        transform: translateX(10px) translateY(4px);
     }
 
     .layer-two {
-        transform:
-            translateX(20px)
-            translateY(8px);
+        transform: translateX(20px) translateY(8px);
     }
 
     .layer-three {
-        transform:
-            translateX(30px)
-            translateY(12px);
+        transform: translateX(30px) translateY(12px);
     }
 
     .flipbook-controls {
         width: 270px;
-
         gap: 10px;
     }
 
     .fb-prev,
     .fb-next {
         padding: 10px 14px;
-
         font-size: 9px;
     }
 
@@ -2302,13 +2232,11 @@ footer a {
 
     .contact-info h2 {
         font-size: 65px;
-
         letter-spacing: -3px;
     }
 
     .contact-links a {
         flex-direction: column;
-
         gap: 5px;
     }
 
@@ -2317,10 +2245,7 @@ footer a {
 
     .page-hero {
         min-height: 500px;
-
-        padding:
-            150px 6%
-            80px;
+        padding: 150px 6% 80px;
     }
 
     .page-hero h1 {
@@ -2332,8 +2257,596 @@ footer a {
 
     footer {
         flex-direction: column;
-
         align-items: flex-start;
     }
+}
 
+
+/* =========================================================
+   18. EXECUTIVE BOARD
+========================================================= */
+
+.executive-board {
+    padding: 110px 5%;
+    background:
+        radial-gradient(
+            circle at 10% 20%,
+            rgba(201, 216, 192, 0.45),
+            transparent 30%
+        ),
+        var(--cream);
+    color: var(--green);
+}
+
+
+/* TEAM HEADING */
+
+.team-heading {
+    max-width: 1400px;
+    margin: 0 auto 45px;
+
+    display: grid;
+    grid-template-columns: 1.4fr 0.6fr;
+    gap: 70px;
+    align-items: end;
+}
+
+.team-heading h2 {
+    margin: 0;
+
+    font-size: clamp(55px, 7vw, 105px);
+    line-height: 0.82;
+    letter-spacing: -5px;
+}
+
+.team-heading > p {
+    max-width: 480px;
+    margin: 0 0 5px;
+
+    font-size: 16px;
+    line-height: 1.6;
+}
+
+
+/* BOARD TABS */
+
+.board-tabs {
+    max-width: 1400px;
+    margin: 0 auto 70px;
+
+    display: flex;
+    gap: 10px;
+
+    border-bottom: 1px solid rgba(6, 87, 53, 0.25);
+}
+
+.board-tab {
+    min-width: 280px;
+    padding: 16px 25px;
+
+    border: 1px solid rgba(6, 87, 53, 0.25);
+    border-bottom: none;
+    border-radius: 10px 10px 0 0;
+
+    background: transparent;
+    color: var(--green);
+
+    font-family: inherit;
+    font-size: 11px;
+    font-weight: bold;
+    letter-spacing: 1.5px;
+
+    cursor: pointer;
+
+    transition:
+        background 0.2s ease,
+        color 0.2s ease;
+}
+
+.board-tab.active {
+    background: var(--green);
+    color: var(--white);
+}
+
+
+/* BOARD GROUPS */
+
+.board-group {
+    display: none;
+}
+
+.board-group.active {
+    display: block;
+}
+
+
+/* FEATURED MEMBER */
+
+.member-showcase {
+    max-width: 1400px;
+    margin: 0 auto 70px;
+
+    display: grid;
+    grid-template-columns: 0.9fr 1.1fr;
+    gap: 90px;
+    align-items: center;
+}
+
+/* MEMBER IMAGE — NO EXTRA FRAME */
+
+.member-card-area {
+    position: relative;
+    min-height: 520px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.member-id-image {
+    display: block;
+    width: min(100%, 430px);
+    height: auto;
+
+    object-fit: contain;
+
+    transition:
+        transform 0.3s ease,
+        opacity 0.3s ease;
+}
+
+.member-id-image:hover {
+    transform: scale(1.03);
+}
+
+/* MEMBER ARROWS */
+
+.member-arrow {
+    position: absolute;
+
+    width: 55px;
+    height: 55px;
+
+    border: 2px solid var(--green);
+    border-radius: 50%;
+
+    background: var(--cream);
+    color: var(--green);
+
+    font-family: inherit;
+    font-size: 22px;
+
+    cursor: pointer;
+
+    transition:
+        background 0.2s ease,
+        color 0.2s ease,
+        transform 0.2s ease;
+}
+
+.member-arrow:hover {
+    background: var(--green);
+    color: var(--white);
+
+    transform: scale(1.05);
+}
+
+.member-prev {
+    left: 0;
+}
+
+.member-next {
+    right: 0;
+}
+
+
+/* MEMBER INFORMATION */
+
+.member-info {
+    max-width: 650px;
+}
+
+.member-count {
+    display: block;
+
+    margin-bottom: 15px;
+
+    font-size: 10px;
+    font-weight: bold;
+    letter-spacing: 2px;
+}
+
+.member-name {
+    margin: 0;
+
+    font-size: clamp(42px, 5vw, 72px);
+    line-height: 0.9;
+    letter-spacing: -3px;
+}
+
+.member-role {
+    display: block;
+
+    margin: 15px 0 30px;
+
+    color: var(--brown);
+
+    font-size: 17px;
+    font-weight: bold;
+    letter-spacing: 5px;
+}
+
+.member-details {
+    border-top: 1px solid rgba(6, 87, 53, 0.3);
+}
+
+.member-detail {
+    padding: 20px 0;
+
+    border-bottom: 1px solid rgba(6, 87, 53, 0.15);
+}
+
+.member-detail span {
+    display: block;
+
+    margin-bottom: 7px;
+
+    font-size: 9px;
+    font-weight: bold;
+    letter-spacing: 1.5px;
+}
+
+.member-detail p {
+    margin: 0;
+
+    font-size: 14px;
+    line-height: 1.5;
+}
+
+
+/* MEMBER SELECTOR */
+
+.member-selector {
+    max-width: 1400px;
+    margin: 0 auto;
+
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+    gap: 10px;
+}
+
+.member-option {
+    min-height: 100px;
+    padding: 18px;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+    border: 1px solid rgba(6, 87, 53, 0.15);
+    border-radius: 10px;
+
+    background: rgba(255, 255, 255, 0.55);
+    color: var(--green);
+
+    font-family: inherit;
+    text-align: left;
+
+    cursor: pointer;
+
+    transition:
+        background 0.2s ease,
+        transform 0.2s ease;
+}
+
+.member-option strong {
+    font-size: 10px;
+    line-height: 1.2;
+    letter-spacing: 1px;
+}
+
+.member-option span {
+    font-size: 9px;
+}
+
+.member-option:hover,
+.member-option.active {
+    background: var(--sage);
+
+    transform: translateY(-4px);
+}
+
+.member-linkedin {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    color: var(--green);
+    font-size: 13px;
+    font-weight: bold;
+    letter-spacing: 1px;
+    text-decoration: none;
+    border-bottom: 1px solid var(--green);
+    padding-bottom: 5px;
+    transition: opacity 0.2s ease;
+}
+
+.member-linkedin:hover {
+    opacity: 0.6;
+}
+
+
+/* UCP EXECUTIVE BOARD */
+
+.ucp-coming-soon {
+    max-width: 1400px;
+    min-height: 400px;
+
+    margin: 0 auto;
+    padding: 70px;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+
+    background:
+        radial-gradient(
+            circle at 90% 10%,
+            rgba(223, 255, 156, 0.18),
+            transparent 30%
+        ),
+        var(--green);
+
+    color: var(--white);
+
+    border-radius: 15px;
+}
+
+.ucp-coming-soon > span {
+    margin-bottom: 15px;
+
+    color: var(--sage);
+
+    font-size: 10px;
+    font-weight: bold;
+    letter-spacing: 2px;
+}
+
+.ucp-coming-soon h3 {
+    margin: 0 0 20px;
+
+    font-size: clamp(45px, 6vw, 80px);
+    line-height: 0.9;
+}
+
+.ucp-coming-soon p {
+    max-width: 500px;
+    margin: 0;
+
+    line-height: 1.5;
+}
+
+
+/* =========================================================
+   19. EXECUTIVE BOARD — TABLET
+========================================================= */
+
+@media (max-width: 1000px) {
+
+    .team-heading,
+    .member-showcase {
+        grid-template-columns: 1fr;
+    }
+
+    .team-heading {
+        gap: 25px;
+    }
+
+    .member-showcase {
+        gap: 50px;
+    }
+
+    .member-info {
+        max-width: none;
+    }
+
+    .member-selector {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+
+/* =========================================================
+   20. EXECUTIVE BOARD — MOBILE
+========================================================= */
+
+@media (max-width: 600px) {
+
+    .executive-board {
+        padding: 90px 6%;
+    }
+
+    .team-heading h2 {
+        font-size: 55px;
+        letter-spacing: -3px;
+    }
+
+    .team-heading > p {
+        font-size: 15px;
+    }
+
+    .board-tabs {
+        margin-bottom: 50px;
+
+        flex-direction: column;
+
+        border-bottom: none;
+    }
+
+    .board-tab {
+        width: 100%;
+        min-width: 0;
+
+        border: 1px solid rgba(6, 87, 53, 0.25);
+        border-radius: 50px;
+    }
+
+    .member-card-area {
+        min-height: 500px;
+    }
+
+    .member-id-card {
+        width: 245px;
+        min-height: 410px;
+
+        padding: 20px;
+
+        box-shadow:
+            10px 15px 0 var(--sage),
+            20px 28px 0 var(--green);
+    }
+
+    .member-photo {
+        height: 240px;
+    }
+
+    .member-arrow {
+        width: 42px;
+        height: 42px;
+
+        font-size: 17px;
+    }
+
+    .member-prev {
+        left: -5px;
+    }
+
+    .member-next {
+        right: -5px;
+    }
+
+    .member-name {
+        font-size: 44px;
+        letter-spacing: -2px;
+    }
+
+    .member-role {
+        font-size: 13px;
+        letter-spacing: 3px;
+    }
+
+    .member-selector {
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .member-option {
+        min-height: 90px;
+        padding: 14px;
+    }
+
+    .ucp-coming-soon {
+        min-height: 350px;
+        padding: 35px 25px;
+    }
+}
+
+
+/* KEEP MEMBER ARROWS ABOVE THE IMAGE */
+
+.member-arrow {
+    z-index: 5;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.member-id-image {
+    pointer-events: none;
+}
+
+/* BABSON EMAIL */
+
+.member-email {
+    display: inline-flex;
+    align-items: flex-start;
+    gap: 8px;
+    color: var(--green);
+    font-size: 14px;
+    font-weight: bold;
+    text-decoration: none;
+    overflow-wrap: anywhere;
+    border-bottom: 1px solid var(--green);
+    padding-bottom: 4px;
+    transition: opacity 0.2s ease;
+}
+
+.member-email:hover {
+    opacity: 0.6;
+}
+
+.detail-icon {
+    width: 16px;
+    height: 16px;
+    margin-top: 2px;
+    flex-shrink: 0;
+}
+
+/* =========================================
+   CHECKPOINT 3 — SPACING IMPROVEMENTS
+   Based on class showcase feedback
+========================================= */
+
+@media (min-width: 901px) {
+
+    /* Make inner-page hero more compact */
+    .page-hero {
+        min-height: 480px;
+        padding: 145px 5% 65px;
+    }
+
+    /* Reduce excess space in About */
+    .about {
+        padding-top: 75px;
+        padding-bottom: 75px;
+    }
+
+    .about .section-label {
+        margin-bottom: 30px;
+    }
+
+    /* Reduce Vision & Mission spacing */
+    .vision-mission {
+        padding-top: 80px;
+        padding-bottom: 90px;
+    }
+
+    .vision-mission .section-heading {
+        margin-bottom: 55px;
+    }
+
+    /* Make Executive Board section more compact */
+    .executive-board {
+        padding-top: 80px;
+        padding-bottom: 80px;
+    }
+
+    .board-tabs {
+        margin-bottom: 45px;
+    }
+
+    .member-showcase {
+        gap: 65px;
+        margin-bottom: 50px;
+    }
+
+    /* Reduce homepage scrolling */
+    .resources {
+        min-height: 650px;
+        padding-top: 80px;
+        padding-bottom: 80px;
+    }
+
+    .contact,
+    .map-placeholder {
+        min-height: 650px;
+    }
 }

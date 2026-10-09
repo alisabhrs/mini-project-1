@@ -467,3 +467,41 @@ The project will be successful if:
 - The design reflects BCA's existing brand
 - The website feels professional without being intimidating
 - Future BCA boards can continue updating the website
+
+
+---
+
+# Later — Future Improvements
+
+Based on my second conversation with my client, the Babson Consulting Association (BCA), the following features are ranked in order of priority.
+
+## 1. Programs — Highest Priority
+
+- Add official application dates and deadlines for CORE and UCP.
+- Include direct application and registration links.
+- Add more detailed program information and timelines.
+- Make it easier for students to understand how to join each program.
+
+## 2. About — Second Priority
+
+- Redesign the About page to make it more unique and representative of BCA.
+- Add more authentic photos of BCA members, executive board members, and events.
+- Improve the layout and typography to make the page feel more natural and professional.
+- Strengthen BCA's identity so the website feels like an official club platform.
+
+## 3. Resources — Third Priority
+
+- Add the official SharePoint Resource Hub link once it is available.
+- Include additional consulting resources such as casebooks, interview preparation materials, and consulting frameworks.
+- Add the BCA Framework Book when it is completed.
+- Improve resource organization and navigation.
+
+## Additional Improvements from Class Showcase
+
+- Simplify sections of the homepage to reduce scrolling.
+- Fix statistics counters displaying zero.
+- Replace remaining placeholder images.
+- Improve text readability and contrast.
+- Organize CSS, JavaScript, and images into separate folders.
+
+These improvements will be implemented based on client priorities, content availability, and future feedback.
