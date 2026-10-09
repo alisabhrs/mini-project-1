@@ -74,14 +74,18 @@ Overall, the feedback helped me understand how I could make the website more aut
 
 ## 4. Changes Made Based on Feedback
 
-**Change Implemented:**  
-[Describe at least one change you made to the website after receiving feedback.]
+**Change Implemented:**
+Reduced excessive spacing and section heights across the website
+by adjusting CSS padding, margins, and minimum heights.
 
-**Feedback Addressed:**  
-[Explain which client or showcase feedback inspired this change.]
+**Feedback Addressed:**
+During the class showcase, several classmates mentioned that
+the homepage felt too long and required excessive scrolling.
+I wanted to make the website more compact without changing
+its existing branding, typography, or interactive features.
 
-**GitHub Commit Link:**  
-[Paste the direct link to your commit here.]
+**Commit Link:**
+https://github.com/alisabhrs/mini-project-1/commit/db501be
 
 ---
 
